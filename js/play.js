@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const videoData = [
         {
             id: 1,
-            title: "jombie",
+            title: "ichaa1",
             thumbnail: "images/bg1.jpg",
             videoUrl: "videos/bokep1.mp4",
             views: "20K",
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         {
             id: 2,
-            title: "jombii",
+            title: "ichaa2",
             thumbnail: "images/bg2.JPG",
             videoUrl: "videos/bokep10.mp4",
             views: "15K",
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
                 {
             id: 3,
-            title: "ayam",
+            title: "ichaa3",
             thumbnail: "images/bg1.jpg",
             videoUrl: "videos/bokep11.mp4",
             views: "20K",
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         {
             id: 4,
-            title: "monyet",
+            title: "ichaa4",
             thumbnail: "images/bg2.JPG",
             videoUrl: "videos/bokep12.mp4",
             views: "15K",
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
                 {
             id: 5,
-            title: "semut",
+            title: "ichaa5",
             thumbnail: "images/bg1.jpg",
             videoUrl: "videos/bokep13.mp4",
             views: "20K",
@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         {
             id: 6,
-            title: "sioyen",
+            title: "ichaa6",
             thumbnail: "images/bg2.JPG",
             videoUrl: "videos/bokep14.mp4",
             views: "15K",
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
                 {
             id: 7,
-            title: "pena",
+            title: "ichaa7",
             thumbnail: "images/bg1.jpg",
             videoUrl: "videos/bokep16.mp4",
             views: "20K",
