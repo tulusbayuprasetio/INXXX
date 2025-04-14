@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const videoData = [
         {
             id: 1,
-            title: "jombie",
+            title: "ichaa1",
             thumbnail: "images/bg1.jpg",
             videoUrl: "videos/bokep1.mp4",
             views: "20K",
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         {
             id: 2,
-            title: "jombii",
+            title: "ichaa2",
             thumbnail: "images/bg2.JPG",
             videoUrl: "videos/bokep10.mp4",
             views: "15K",
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
                 {
             id: 3,
-            title: "ayam",
+            title: "ichaa3",
             thumbnail: "images/bg1.jpg",
             videoUrl: "videos/bokep11.mp4",
             views: "20K",
