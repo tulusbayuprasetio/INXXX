@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Play Video</title>
+  <link rel="stylesheet" href="in.css" />
+</head>
+<body>
+   <!-- Header -->
+  <div class="topbar">
+    <div class="logo">PENAF</div>
+    <div class="search">
+      <input id="q" type="text" placeholder="">
+      <button class="btn">Mencari</button>
+    </div>
+  </div>
+
+  <!-- Tabs -->
+  <nav class="tabs">
+    <a href="Index.html" class="tab">Home</a>
+    <a href="#" class="tab">Film</a>
+    <a href="#" class="tab">Trending</a>
+    <a href="#" class="tab">Class</a>
+    <a href="#" class="tab">Hot</a>
+  </nav>
+
+<!-- Banner -->
+  <!-- Banner -->
+  <div class="cta"><a class="ta"href="https://gresiklogin.space/register?referral_code=tayong"> 
+    <div>
+      
+      <strong> Gresiktoto Situs Gacor Terpercaya</strong><br>
+      <span style="color:#aaa;font-size:13px;">Bergabung dan raih bonus deposit new member</span>
+    </div>
+    <div class="tab">Join Sekarang</div>
+  </div>
+</a>
+</div>
+</div>
+
+  <div class="section" id="playerSection">
+    <h3 id="videoTitle"></h3>
+    
+    <video id="videoPlayer" width="100%" controls style="border-radius:12px; margin-bottom:16px;"></video>
+
+  <!-- Banner -->
+  <div class="cta"><a class="ta"href="https://gresiklogin.space/register?referral_code=tayong"> 
+    <div>
+      
+      <strong> Gresiktoto Situs Gacor Terpercaya</strong><br>
+      <span style="color:#aaa;font-size:13px;">Bergabung dan raih bonus deposit new member</span>
+    </div>
+    <div class="tab">Join Sekarang</div>
+  </div>
+</a>
+</div>
+</div>
+
+
+  <div class="section">
+    <h3>Video Lainnya</h3>
+    <div id="relatedMovies" class="section-grid"></div>
+  
+  
+    <!-- Banner -->
+  <div class="cta"><a class="ta"href="https://gresiklogin.space/register?referral_code=tayong"> 
+    <div>
+      
+      <strong> Gresiktoto Situs Gacor Terpercaya</strong><br>
+      <span style="color:#aaa;font-size:13px;">Bergabung dan raih bonus deposit new member</span>
+    </div>
+    <div class="tab">Join Sekarang</div>
+  </div>
+</a>
+</div>
+</div>
+  
+  
+
+</div>
+  <script src="in.js"></script>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const id = parseInt(params.get("id"));
+    const movie = movies.find(m => m.id === id);
+
+    if (movie) {
+  const videoPlayer = document.getElementById("videoPlayer");
+  document.getElementById("videoTitle").textContent = movie.title;
+  videoPlayer.src = movie.video;
+
+  // Auto play setelah video siap
+  videoPlayer.addEventListener("loadeddata", () => {
+    videoPlayer.play().catch(() => {
+      console.log("Autoplay diblokir oleh browser");
+    });
+  });
+}
+
+    // tampilkan daftar lain
+    const related = document.getElementById("relatedMovies");
+    related.innerHTML = movies.filter(m => m.id !== id).map(m => `
+      <a href="player.html?id=${m.id}" class="movie-card">
+        <div class="movie-thumb" style="background-image:url('${m.thumb}')"></div>
+        <div class="movie-info"><div class="title">${m.title}</div><div>${m.genre} • ${m.year}</div></div>
+      </a>
+    `).join("");
+  </script>
+</body>
+</html>
