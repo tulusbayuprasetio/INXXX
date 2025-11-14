@@ -101,7 +101,7 @@ const movies = [
     title: "Sinamoy",
     year: 2021,
     genre: "Action",
-    thumb: "img/Sinamoy.jpg",
+    thumb: "img/sinamoy.jpg",
     video: "videos/bokep21.mp4"
   },
   {
